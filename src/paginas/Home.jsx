@@ -1,6 +1,7 @@
 import Navegacion from "../layout/Navegacion"
 import HeroPrincipal from "../layout/HeroPrincipal"
 import FooterGeneral from "../layout/FooterGeneral"
+import BannerBeyond from "../layout/BannerBeyond";
 import { Link } from "react-router-dom";
 import { Button, Timeline, Card } from "flowbite-react";
 import { HiArrowNarrowRight, HiCheckCircle } from "react-icons/hi";
@@ -58,7 +59,7 @@ const Home = () => {
 
             <div>
               <Card
-                className="max-w-sm lg:mx-3"
+                className="max-w-sm m-auto lg:mx-3"
                 imgAlt="Meaningful alt text for an image that is not purely decorative"
                 imgSrc="/images/image_11.jpg"
               >
@@ -97,22 +98,20 @@ const Home = () => {
 
         </section>
 
-        <section className="w-10/12 mx-auto my-20 text-center lg:grid lg:grid-cols-3 lg:justify-between lg:items-center lg:gap-x-10">
-          <div>
-            <div>
-              <p className="text-3xl fuenteTitulo">Personalized Service</p>
+        <section className="bg-gray-100">
+          <div className="text-center text-sm w-10/12 mx-auto py-20 lg:grid lg:grid-cols-3 lg:justify-between lg:items-center lg:gap-x-8 ">
+            <div className="mb-5">
+              <p className="text-3xl text-cyan-950 fuenteTitulo">Personalized Service</p>
               <p>Enjoy personalized service with Medina Marketing Business. Our team is committed to ensuring your accommodation meets your expectations and needs, providing assistance from booking to checkout.</p>
             </div>
-            <img className="rounded-full border-2 border-white shadow-md " src="/images/image_1.jpg" alt="image_sofa" />
+            <img className="mb-5 rounded-full border-2 border-white shadow-md " src="/images/image_1.jpg" alt="image_sofa" />
             <div>
-              <p className="text-3xl fuenteTitulo">Trust and Reliability</p>
+              <p className="text-3xl text-cyan-950 fuenteTitulo">Trust and Reliability</p>
               <p>Count on Medina Marketing Business for trust and reliability. With a strong reputation for quality accommodations and excellent customer service, we ensure peace of mind throughout your stay.</p>
             </div>
-
           </div>
-
-
         </section>
+        <BannerBeyond/>
 
       </main>
 

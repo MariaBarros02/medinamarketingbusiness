@@ -2,10 +2,10 @@
 const FooterGeneral = () => {
     return (
         <>
-            <footer className="bg-white text-cyan-950  flex flex-col py-3 lg:flex-row lg:justify-between lg:items-center lg:px-12">
+            <footer className="bg-cyan-950 text-white  flex flex-col py-5 lg:flex-row lg:justify-between lg:items-center lg:px-12">
 
                 <div className="m-auto lg:m-0">
-                    <img className="h-60" src="images/logo_1.png" alt="logo" />
+                    <img className="h-44" src="images/logo_2.png" alt="logo" />
 
                 </div>
                 <div className=" text-center">
@@ -14,7 +14,7 @@ const FooterGeneral = () => {
                     </div>
                     <div className="flex items-center justify-center py-1">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width="20" height="20"
-                            viewBox="0 0 24 24" strokeWidth="1.5" stroke="#083344" fill="none" strokeLinecap="round"
+                            viewBox="0 0 24 24" strokeWidth="1.5" stroke="#fff" fill="none" strokeLinecap="round"
                             strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
@@ -24,7 +24,7 @@ const FooterGeneral = () => {
                     </div>
                     <div className="flex items-center justify-center py-1">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-building" width="20"
-                            height="20" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#083344" fill="none"
+                            height="20" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#fff" fill="none"
                             strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M3 21l18 0" />
@@ -40,7 +40,7 @@ const FooterGeneral = () => {
                     </div>
                     <div className="flex items-center justify-center py-1">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-phone" width="20"
-                            height="20" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#083344" fill="none" strokeLinecap="round"
+                            height="20" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#fff" fill="none" strokeLinecap="round"
                             strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path
