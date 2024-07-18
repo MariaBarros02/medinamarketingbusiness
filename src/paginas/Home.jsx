@@ -89,11 +89,28 @@ const Home = () => {
           <div className="bg-cyan-950 w-3/5 mx-auto my-5 p-5 text-white lg:col-span-2">
             <p className="text-xl fuenteTitulo sm:text-5xl">Experience Quality Accommodations</p>
             <p className="text-sm my-3" >We pride ourselves on providing top-quality accommodations that cater to your every need. If you have any questions or need assistance with your booking, don't hesitate to reach out to us. </p>
-            <Button className="my-5  w-40 text-cyan-950 font-bold " color="light"  as={Link} to="/properties">
+            <Button className="my-5  w-40 text-cyan-950 font-bold " color="light" as={Link} to="/properties">
               CONTACT US
-             
+
             </Button>
           </div>
+
+        </section>
+
+        <section className="w-10/12 mx-auto my-20 text-center lg:grid lg:grid-cols-3 lg:justify-between lg:items-center lg:gap-x-10">
+          <div>
+            <div>
+              <p className="text-3xl fuenteTitulo">Personalized Service</p>
+              <p>Enjoy personalized service with Medina Marketing Business. Our team is committed to ensuring your accommodation meets your expectations and needs, providing assistance from booking to checkout.</p>
+            </div>
+            <img className="rounded-full border-2 border-white shadow-md " src="/images/image_1.jpg" alt="image_sofa" />
+            <div>
+              <p className="text-3xl fuenteTitulo">Trust and Reliability</p>
+              <p>Count on Medina Marketing Business for trust and reliability. With a strong reputation for quality accommodations and excellent customer service, we ensure peace of mind throughout your stay.</p>
+            </div>
+
+          </div>
+
 
         </section>
 
