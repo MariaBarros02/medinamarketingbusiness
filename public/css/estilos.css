@@ -1,0 +1,76 @@
+/*GLOBAL*/
+
+:root{
+    --colorPrimario: #242424;
+    --colorPrimarioII: #FFF;
+    --colorSecundario: #01A9B4;
+    --colorSecundarioII: #FF3052;
+
+    --fuenteParrafo: "IBM Plex Serif", serif;
+    --fuenteTitulo: "Bona Nova SC", serif
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+body{
+    font-family: var(--fuenteParrafo);
+    color: var(--colorPrimario);
+}
+img{
+    width: 100%;
+}
+.img--centrada{
+    object-position: center;
+}
+
+.fuenteTitulo{
+    font-family: var(--fuenteTitulo);
+}
+
+/*Navegacion*/
+
+.navegacion__link{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    display: block;
+    font-weight: bold;
+}
+.navegacion__link:hover{
+    background-color: #e4e4e4;
+}
+
+@media (min-width: 1024px) {
+    .navegacion__link{
+        width: auto;
+        padding: 2rem;
+    }
+}
+
+
+/*HERO*/
+
+.hero, .heroGeneral{
+    height: 15rem;
+}
+@media (min-width: 1024px) {
+    .hero, .heroGeneral{
+        height: 25rem;
+    }
+}
+
+/*BANNER CONTACTO*/
+
+.bannerContacto{
+    background-image: url("../images/image_6.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
