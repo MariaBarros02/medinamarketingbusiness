@@ -14,7 +14,7 @@ const HeroGeneral = ({pagina}) => {
                 </div>
                 <div className="bg-white bg-opacity-50 absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center z-10">
                     
-                    <h1 className="uppercase text-cyan-950 text-9xl font-bold m-0 fuenteTitulo">{pagina}</h1>
+                    <h1 className="uppercase text-cyan-950 text-8xl font-bold m-0 fuenteTitulo">{pagina}</h1>
                 </div>
 
             </header>
