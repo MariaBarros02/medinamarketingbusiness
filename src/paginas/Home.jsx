@@ -1,7 +1,7 @@
 import Navegacion from "../layout/Navegacion"
 import HeroPrincipal from "../layout/HeroPrincipal"
 import FooterGeneral from "../layout/FooterGeneral"
-import BannerBeyond from "../layout/BannerBeyond";
+import BannerBeyond from "../components/BannerBeyond";
 import { Link } from "react-router-dom";
 import { Button, Timeline, Card } from "flowbite-react";
 import { HiArrowNarrowRight, HiCheckCircle } from "react-icons/hi";
@@ -17,7 +17,7 @@ const Home = () => {
 
 
         <section className=" w-10/12 mx-auto my-5 ">
-          <h2 className="text-center text-4xl font-bold my-10 text-cyan-950">Find Your Perfect Stay Here!</h2>
+          <h2 className="text-center text-4xl fuenteTitulo font-bold my-10 text-cyan-950">Find Your Perfect Stay Here!</h2>
           <div className="lg:grid lg:grid-cols-3">
             <div className="lg:col-span-2 ">
               <Timeline horizontal>
