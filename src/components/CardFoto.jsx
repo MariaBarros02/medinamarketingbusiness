@@ -3,7 +3,7 @@ import { Card } from "flowbite-react"
 const CardFoto = ({imagen, titulo, parrafo}) => {
     return (
         <Card
-            className= "max-w-sm mx-auto " 
+            className= "max-w-sm mx-auto mb-8 " 
             imgAlt="Meaningful alt text for an image that is not purely decorative"
             imgSrc={imagen}
         >

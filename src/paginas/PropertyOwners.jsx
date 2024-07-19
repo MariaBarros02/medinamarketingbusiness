@@ -26,7 +26,7 @@ const PropertyOwners = () => {
 
       <section className="banner banner--bg_2 ">
         <div className="bg-black bg-opacity-50 py-20">
-          <div className="w-10/12 m-auto lg:grid lg:grid-cols-3 lg:gap-x-8">
+          <div className="w-10/12 m-auto md:grid md:grid-cols-2 md:gap-x-8  lg:grid-cols-3">
            
             <CardFoto
               imagen="/images/image_17.jpg"
@@ -51,7 +51,7 @@ const PropertyOwners = () => {
 
       <section className="banner banner--bg_1">
         <div  className="bg-white bg-opacity-50 py-20 text-center ">
-            <p className="w-8/12 m-auto text-3xl mb-5 fuenteTitulo text-gray-800">
+            <p className="w-8/12 m-auto text-xl mb-5 fuenteTitulo text-gray-800 md:text-3xl">
               Are you ready to maximize your property’s potential with Medina Marketing Business? We invite you to get in touch with us today.
             </p>
             <Button className=" m-auto w-40 font-bold bg-cyan-950 " as={Link} to="mailto:mmv@medinamarketingbusiness.com">
