@@ -2,6 +2,7 @@ import Navegacion from "../layout/Navegacion"
 import HeroPrincipal from "../layout/HeroPrincipal"
 import FooterGeneral from "../layout/FooterGeneral"
 import BannerBeyond from "../components/BannerBeyond";
+import Space from "../components/Space";
 import { Link } from "react-router-dom";
 import { Button, Timeline, Card } from "flowbite-react";
 import { HiArrowNarrowRight, HiCheckCircle } from "react-icons/hi";
@@ -14,8 +15,6 @@ const Home = () => {
       <HeroPrincipal />
 
       <main>
-
-
         <section className=" w-10/12 mx-auto my-5 ">
           <h2 className="text-center text-4xl fuenteTitulo font-bold my-10 text-cyan-950">Find Your Perfect Stay Here!</h2>
           <div className="lg:grid lg:grid-cols-3">
@@ -29,7 +28,6 @@ const Home = () => {
                     <Timeline.Body className="text-sm">
                       At Medina Marketing Business, we make it easy to plan your trip. Start by determining your budget, the number of people, and your travel dates. These details will help you narrow down your options and find the perfect accommodation that fits your needs. Knowing what you want in advance makes the search process much smoother and more efficient.
                     </Timeline.Body>
-
                   </Timeline.Content>
                 </Timeline.Item>
                 <Timeline.Item>
@@ -53,10 +51,7 @@ const Home = () => {
                   </Timeline.Content>
                 </Timeline.Item>
               </Timeline>
-
-
             </div>
-
             <div>
               <Card
                 className="max-w-sm m-auto lg:mx-3"
@@ -78,21 +73,18 @@ const Home = () => {
                 </Button>
               </Card>
             </div>
-
           </div>
-
         </section>
+        <Space
+          className="bg-cyan-950"
+        />
 
-        <section className="bg-cyan-950 py-16">
-        </section>
-
-        <section className="bannerContacto h-auto lg:grid lg:grid-cols-3 py-5 ">
+        <section className="banner banner--bg_1 h-auto lg:grid lg:grid-cols-3 py-5 ">
           <div className="bg-cyan-950 w-3/5 mx-auto my-5 p-5 text-white lg:col-span-2">
             <p className="text-xl fuenteTitulo sm:text-5xl">Experience Quality Accommodations</p>
             <p className="text-sm my-3" >We pride ourselves on providing top-quality accommodations that cater to your every need. If you have any questions or need assistance with your booking, don't hesitate to reach out to us. </p>
-            <Button className="my-5  w-40 text-cyan-950 font-bold " color="light" as={Link} to="/properties">
+            <Button className="my-5  w-40 text-cyan-950 font-bold " color="light" as={Link} to="mailto:mmv@medinamarketingbusiness.com">
               CONTACT US
-
             </Button>
           </div>
 

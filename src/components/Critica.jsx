@@ -2,7 +2,7 @@ import { Card, Avatar } from "flowbite-react"
 const Critica = ({url, urlImagen, titulo, opinion, nombre, fecha}) => {
     return (
         <>
-            <Card href={url} className="w-full my-5">
+            <Card href={url} target="_blank" className="w-full my-5">
                 <div className="flex flex-wrap gap-2">
                     <Avatar img={urlImagen} alt="avatar of Jese" rounded />
                     <div>

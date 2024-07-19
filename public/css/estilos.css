@@ -1,10 +1,6 @@
 /*GLOBAL*/
 
 :root{
-    --colorPrimario: #242424;
-    --colorPrimarioII: #FFF;
-    --colorSecundario: #01A9B4;
-    --colorSecundarioII: #FF3052;
 
     --fuenteParrafo: "IBM Plex Serif", serif;
     --fuenteTitulo: "Bona Nova SC", serif
@@ -19,7 +15,6 @@ html {
 }
 body{
     font-family: var(--fuenteParrafo);
-    color: var(--colorPrimario);
 }
 img{
     width: 100%;
@@ -65,12 +60,17 @@ img{
     }
 }
 
-/*BANNER CONTACTO*/
-
-.bannerContacto{
-    background-image: url("../images/image_6.jpg");
+/*BANNERS*/
+.banner{
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
 }
+.banner--bg_1{
+    background-image: url("../images/image_6.jpg");
 
+}
+
+.banner--bg_2{
+    background-image:url("../images/image_1.jpg");
+}
