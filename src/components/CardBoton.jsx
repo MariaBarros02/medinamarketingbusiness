@@ -1,7 +1,7 @@
 import { Card, Button } from "flowbite-react"
 import { Link } from "react-router-dom"
 
-const CardBoton = ({imagen, titulo, parrafo, boton}) => {
+const CardBoton = ({imagen, titulo, parrafo, boton, link}) => {
     return (
         <>
             <Card
@@ -15,7 +15,7 @@ const CardBoton = ({imagen, titulo, parrafo, boton}) => {
                 <p className="font-normal text-sm text-gray-500 dark:text-gray-400">
                     {parrafo}
                 </p>
-                <Button className="bg-yellow-600" as={Link} to="/properties">
+                <Button className="bg-yellow-600 " color="dark" as={Link} to={link}>
                     {boton}
                 </Button>
             </Card>

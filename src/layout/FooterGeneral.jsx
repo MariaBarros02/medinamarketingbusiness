@@ -8,7 +8,7 @@ const FooterGeneral = () => {
                     <img className="h-44" src="images/logo_2.png" alt="logo" />
 
                 </div>
-                <div className=" text-center">
+                <div className=" text-center text-sm">
                     <div>
                         <p className="py-1">© 2024 All Rights Reserved</p>
                     </div>

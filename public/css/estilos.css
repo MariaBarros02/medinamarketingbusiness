@@ -67,10 +67,14 @@ img{
     background-size: cover;
 }
 .banner--bg_1{
-    background-image: url("../images/image_6.jpg");
+    background-image: url("../images/image_24.jpg");
 
 }
 
 .banner--bg_2{
     background-image:url("../images/image_1.jpg");
+}
+
+.banner--bg_3{
+    background-image: url("../images/image_3.jpg");
 }

@@ -59,8 +59,8 @@ const Home = () => {
                 titulo=""
                 parrafo="We offer a diverse range of accommodations to suit every traveler's needs."
                 boton="VIEW ACCOMODATIONS"
-              />
-              
+                link = "/properties"
+              />  
             </div>
           </div>
         </section>
@@ -76,7 +76,6 @@ const Home = () => {
               CONTACT US
             </Button>
           </div>
-
         </section>
 
         <section className="bg-gray-100">
