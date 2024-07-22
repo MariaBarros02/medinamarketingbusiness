@@ -1,10 +1,15 @@
+import jsonServer from 'json-server';
+import path from 'path';
+import express from 'express';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
-const jsonServer = require('json-server');
-const path = require('path');
-const express = require('express');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 const app = express();
 const server = jsonServer.create();
-const router = jsonServer.router('db.json');
+const router = jsonServer.router('./db.json');
 const middlewares = jsonServer.defaults();
 
 const PORT = process.env.PORT || 5000;
