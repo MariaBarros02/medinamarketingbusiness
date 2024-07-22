@@ -50,7 +50,7 @@ const Guests = () => {
         <div className="bg-cyan-950 p-5 text-white  mb-3 md:mb-0">
           <p className="text-xl fuenteTitulo sm:text-5xl">Book Your Stay on Airbnb</p>
           <p className="text-sm my-3" >At Medina Marketing Business, we have made it even easier for you to book your perfect stay. All of our properties, complete with detailed descriptions and high-quality photos, are available on Airbnb. With just a few clicks, you can secure your ideal accommodation and start planning your trip with confidence.</p>
-          <Button className="my-5  w-48 text-cyan-950 font-bold uppercase" color="light" as={Link} to="https://www.airbnb.mx/users/show/445301888" target="_blank">
+          <Button className="my-5 mx-auto  w-48 text-cyan-950 font-bold uppercase lg:mx-0" color="light" as={Link} to="https://www.airbnb.mx/users/show/445301888" target="_blank">
             view our profile
           </Button>
         </div>
