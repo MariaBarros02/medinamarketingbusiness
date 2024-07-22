@@ -14,22 +14,22 @@ const Property = () => {
   const { id } = useParams();
 
 
-/*  const [propiedad, setPropiedad] = useState([]);
-
-  useEffect(() => {
-    const obtenerPropiedad = async () => {
-      try {
-        const { data } = await axios.get("http://localhost:8000/propiedades");
-        setPropiedad(data[id - 1]);
-      } catch (error) {
-        console.log(error)
+  /*  const [propiedad, setPropiedad] = useState([]);
+  
+    useEffect(() => {
+      const obtenerPropiedad = async () => {
+        try {
+          const { data } = await axios.get("http://localhost:8000/propiedades");
+          setPropiedad(data[id - 1]);
+        } catch (error) {
+          console.log(error)
+        }
       }
-    }
-    obtenerPropiedad();
-  }, []);
-*/
+      obtenerPropiedad();
+    }, []);
+  */
   console.log(propiedades)
-  const { titulo, ciudad, descripcion, mapa, imagenes } = propiedades[id-1];
+  const { titulo, ciudad, descripcion, mapa, imagenes } = propiedades[id - 1];
 
 
   return (
@@ -41,20 +41,21 @@ const Property = () => {
       />
 
       <section className="pt-10 pb-5">
-        <div className="w-11/12 m-auto">
 
-          <Button outline pill>
-            <HiOutlineArrowLeft className="h-4 w-4 " />
-          </Button>
+        <div className="w-10/12 m-auto flex justify-between items-center font-bold text-xs ">
 
-        </div>
-        <div className="w-10/12 m-auto flex justify-between font-bold text-xs lg:text-2xl">
+          <div className="flex items-center">
+
+            <Button outline pill>
+              <HiOutlineArrowLeft className="h-4 w-4 " />
+            </Button>
+            <p className="text-cyan-950 pl-2 lg:text-2xl">{titulo}</p>
+
+          </div>
 
 
-          <p className="text-cyan-950 pl-2">{titulo}</p>
 
-
-          <p className="text-yellow-600">{ciudad}</p>
+          <p className="text-yellow-600 lg:text-sm">{ciudad}</p>
         </div>
 
       </section >
