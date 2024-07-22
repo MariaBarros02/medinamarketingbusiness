@@ -1,12 +1,14 @@
 import Navegacion from "../layout/Navegacion"
 import HeroGeneral from "../layout/HeroGeneral"
 import FooterGeneral from "../layout/FooterGeneral"
-import { useParams, Link} from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
-import { Button } from "flowbite-react";
+import { Button, Carousel, Rating } from "flowbite-react";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import propiedades from "../data/propiedades.js"
+import 'leaflet/dist/leaflet.css';
+
 
 
 const Property = () => {
@@ -29,7 +31,7 @@ const Property = () => {
     }, []);
   */
   console.log(propiedades)
-  const { titulo, ciudad, descripcion, mapa, imagenes } = propiedades[id - 1];
+  const { titulo, ciudad, descripcion, mapa, imagenes, puntuacion, calificaciones, estrellas, parrafo,link } = propiedades[id - 1];
 
 
   return (
@@ -38,15 +40,16 @@ const Property = () => {
       <Navegacion />
       <HeroGeneral
         pagina="Properties"
+        clase="heroProperty"
       />
 
       <section className="pt-10 pb-5">
 
-        <div className="w-10/12 m-auto flex justify-between items-center font-bold text-sm ">
+        <div className="w-10/12 m-auto md:flex md:justify-between md:items-center font-bold  ">
 
-          <div className="flex items-center">
+          <div className="flex  md:items-center">
 
-            <Link to="/properties">
+            <Link to="/properties" className="hidden md:inline">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-left" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#083344" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M12 21a9 9 0 1 0 0 -18a9 9 0 0 0 0 18" />
@@ -55,22 +58,69 @@ const Property = () => {
                 <path d="M12 8l-4 4" />
               </svg>
             </Link>
-            <p className="text-cyan-950 pl-2 md:text-xl w-3/5 md:w-full lg:text-2xl">{titulo}</p>
+            <p className="text-cyan-950 mb-2 text-center text-3xl md:w-full md:pl-2 md:mb-0 md:text-left md:text-2xl lg:text-3xl">{titulo}</p>
 
           </div>
 
 
 
-          <p className="text-yellow-600 text-right lg:text-sm">{ciudad}</p>
+          <p className="text-yellow-600 text-center  md:text-right ">{ciudad}</p>
         </div>
 
       </section >
-      <section className="pb-10">
-        <div className="w-10/12 m-auto " >
-          <iframe className="w-full h-60" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d18557.364409156176!2d-122.21657593583618!3d40.18698711810877!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1721612581591!5m2!1ses!2smx" style={{ border: "0" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+
+      <section className="pb-5">
+        <div className="w-10/12 m-auto lg:grid lg:gap-5 lg:grid-cols-3">
+          <div className=" h-80 lg:col-span-2 md:mb-5">
+            <Carousel slideInterval={5000}>
+              {
+                imagenes.map(imagen => (
+                  <img className="" src={`/properties/property_${id}/${imagen}.webp`} alt="..." />
+                ))
+              }
+            </Carousel>
+          </div>
+          <div>
+            <div className="">
+              <Rating className="mb-2">
+                <Rating.Star />
+                <Rating.Star />
+                <Rating.Star />
+                <Rating.Star />
+                <Rating.Star />
+                <p className="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">{`${puntuacion} out of 5`} </p>
+              </Rating>
+              <p className="mb-4 text-sm font-medium text-gray-500 dark:text-gray-400">{`${calificaciones} global ratings `} <Link className="underline" to={link} target="_blank" >on Airbnb</Link> </p>
+              <Rating.Advanced percentFilled={estrellas[0]} className="mb-2">
+                5 star
+              </Rating.Advanced>
+              <Rating.Advanced percentFilled={estrellas[1]} className="mb-2">
+                4 star
+              </Rating.Advanced>
+              <Rating.Advanced percentFilled={estrellas[2]} className="mb-2">
+                3 star
+              </Rating.Advanced>
+              <Rating.Advanced percentFilled={estrellas[3]} className="mb-2">
+                2 star
+              </Rating.Advanced>
+              <Rating.Advanced percentFilled={estrellas[4]}>1 star</Rating.Advanced>
+            </div>
+            <p className="text-gray-700 mt-5 font-bold  text-2xl">Entire accommodation: <br/><span className="font-normal text-2xl">{parrafo}</span></p>
+
+          </div>
+
+
         </div>
 
       </section>
+
+      <section className="pb-10">
+        <div className="w-10/12 m-auto " >
+          <iframe className="w-full h-60 iframe" src={`https://www.google.com/maps/embed?${mapa}`} style={{ border: "0" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </section>
+
       <FooterGeneral />
     </>
   )

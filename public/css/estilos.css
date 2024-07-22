@@ -58,6 +58,9 @@ img{
     .hero, .heroGeneral{
         height: 25rem;
     }
+    .heroProperty{
+        height: 15rem;
+    }
 }
 
 /*BANNERS*/
@@ -78,3 +81,4 @@ img{
 .banner--bg_3{
     background-image: url("../images/image_3.jpg");
 }
+

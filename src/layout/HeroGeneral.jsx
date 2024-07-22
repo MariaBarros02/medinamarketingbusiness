@@ -1,9 +1,9 @@
 import { Carousel } from "flowbite-react"
-const HeroGeneral = ({pagina}) => {
+const HeroGeneral = ({pagina, clase}) => {
     return (
         <>
             <header className="relative">
-                <div className=" top-0 hero">
+                <div className={`top-0 hero ${clase}`}>
                     <Carousel leftControl=" " rightControl=" ">
                         <img className="img--centrada" src="/images/image_8.jpg" alt="..." />
                         <img className="img--centrada" src="/images/image_4.jpg" alt="..." />
