@@ -34,7 +34,7 @@ function Navegacion() {
       <div className="bg-white text-cyan-900  flex flex-col lg:flex-row lg:justify-between lg:items-center lg:px-5 ">
         <div className="m-auto ">
           <div className="hidden lg:block">
-            <img className=" w-16" src="images/logo_1.png" alt="logo" />
+            <img className=" w-16" src="/images/logo_1.png" alt="logo" />
           </div>
           <div className="text-6xl py-6 lg:hidden " id="btn-menu">
             <a href="/" >☰</a>

@@ -1,5 +1,5 @@
 {
-  "homepage":"https://github.com/MariaBarros02/medinamarketingbusiness",
+  "homepage": "https://github.com/MariaBarros02/medinamarketingbusiness",
   "name": "medinamarketingbusiness",
   "private": true,
   "version": "0.0.0",
@@ -10,10 +10,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "npx json-server --watch src/data/propiedades.json --port 5000"
   },
   "dependencies": {
+    "axios": "^1.7.2",
     "flowbite-react": "^0.10.1",
+    "json-server": "^1.0.0-beta.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.25.0"

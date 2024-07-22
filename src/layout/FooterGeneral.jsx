@@ -5,7 +5,7 @@ const FooterGeneral = () => {
             <footer className="bg-cyan-950 text-white  flex flex-col py-5 lg:flex-row lg:justify-between lg:items-center lg:px-12">
 
                 <div className="m-auto lg:m-0">
-                    <img className="h-44" src="images/logo_2.png" alt="logo" />
+                    <img className="h-44" src="/images/logo_2.png" alt="logo" />
 
                 </div>
                 <div className=" text-center text-sm">
