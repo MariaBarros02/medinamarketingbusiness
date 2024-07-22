@@ -63,7 +63,7 @@ const Property = () => {
       </section >
       <section className="pb-5">
         <div className="w-10/12 m-auto lg:grid lg:gap-5 lg:grid-cols-3">
-          <div className="h-60 md:h-72 lg:col-span-2 md:mb-5">
+          <div className="h-64 md:h-72 lg:col-span-2 md:mb-5">
             <Carousel slideInterval={5000}>
               {
                 imagenes.map(imagen => (
