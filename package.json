@@ -11,7 +11,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "npx json-server --watch src/data/propiedades.json --port 5000"
+    "serve": "node server.js"
   },
   "dependencies": {
     "axios": "^1.7.2",

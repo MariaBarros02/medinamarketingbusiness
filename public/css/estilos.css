@@ -51,7 +51,7 @@ img{
 
 /*HERO*/
 
-.hero, .heroGeneral{
+.hero, .heroGeneral, .heroProperty{
     height: 15rem;
 }
 @media (min-width: 1024px) {

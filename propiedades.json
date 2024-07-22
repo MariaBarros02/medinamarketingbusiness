@@ -2,11 +2,11 @@
     "propiedades": [
         {
             "id": 1,
-            "titulo": "Red Bluff, California: Luxury House Next to the Fair",
+            "titulo": "Luxury House Next to the Fair",
+            "ciudad": "Red Bluff, California ",
             "descripcion": "Relax in this tranquil and elegant space. This fully equipped house offers comfortable sleeping areas, with curtains in all bedrooms for a better rest. Enjoy a well-equipped kitchen, free parking, and a location just 5 minutes from downtown and the Red Bluff fairgrounds!",
-            "ubicacion": "",
+            "mapa": "",
             "imagenes":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34]
-
 
         }
     ]
