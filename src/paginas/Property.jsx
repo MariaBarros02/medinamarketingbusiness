@@ -6,13 +6,15 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import { Button } from "flowbite-react";
 import { HiOutlineArrowLeft } from "react-icons/hi";
+import propiedades from "../data/propiedades.js"
 
 
 const Property = () => {
 
   const { id } = useParams();
 
-  const [propiedad, setPropiedad] = useState([]);
+
+/*  const [propiedad, setPropiedad] = useState([]);
 
   useEffect(() => {
     const obtenerPropiedad = async () => {
@@ -25,8 +27,9 @@ const Property = () => {
     }
     obtenerPropiedad();
   }, []);
-
-  const { titulo, ciudad, descripcion, mapa, imagenes } = propiedad;
+*/
+  console.log(propiedades)
+  const { titulo, ciudad, descripcion, mapa, imagenes } = propiedades[id-1];
 
 
   return (

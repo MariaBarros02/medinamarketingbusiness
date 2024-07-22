@@ -2,6 +2,7 @@ import Navegacion from "../layout/Navegacion"
 import HeroGeneral from "../layout/HeroGeneral"
 import FooterGeneral from "../layout/FooterGeneral"
 import CardBoton from "../components/CardBoton"
+import propiedades from "../data/propiedades"
 import { Card } from "flowbite-react"
 import { useEffect, useState } from "react"
 import axios from 'axios';
@@ -9,7 +10,7 @@ import axios from 'axios';
 
 
 const Properties = () => {
-  const [propiedades, setPropiedades] = useState([]);
+  /*const [propiedades, setPropiedades] = useState([]);
 
   useEffect(() => {
     const obtenerPropiedades = async () => {
@@ -21,7 +22,7 @@ const Properties = () => {
       }
     }
     obtenerPropiedades();
-  }, []);
+  }, []);*/
 
 
   return (
@@ -38,6 +39,7 @@ const Properties = () => {
 
           {propiedades.map(propiedad => (
             <CardBoton
+            key={propiedad.id}
             imagen={`/properties/property_${propiedad.id}/principal.webp`}
             titulo={propiedad.titulo}
             parrafo={propiedad.descripcion}
