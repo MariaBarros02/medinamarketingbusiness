@@ -6,4 +6,4 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 server.use('/.netlify/functions/server', router);
 
-module.exports.handler = server.listen(3000).handler;
+module.exports.handler = server.listen(5173).handler;
