@@ -8,6 +8,8 @@
 
 html {
     box-sizing: border-box;
+    overflow-x: hidden;
+
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -83,3 +85,6 @@ img{
     background-image: url("../images/image_3.jpg");
 }
 
+.iframe{
+    overflow: hidden;
+}
