@@ -103,7 +103,7 @@ const Property = () => {
 
       <section className="pb-10">
         <div className="w-10/12 m-auto " >
-          <iframe className=" h-60 iframe" src={`https://www.google.com/maps/embed?${mapa}`} style={{ border: "0" }} width="100%" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          <iframe className=" h-60 iframe" src={`https://www.google.com/maps/embed?${mapa}`} style={{ border: "0" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
 

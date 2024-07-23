@@ -86,5 +86,5 @@ img{
 }
 
 .iframe{
-    overflow: hidden;
+    width: 100%;
 }
