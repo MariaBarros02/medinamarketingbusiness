@@ -31,7 +31,6 @@ const Property = () => {
       obtenerPropiedad();
     }, []);
   */
-  console.log(propiedades)
   const { titulo, ciudad, descripcion, mapa, imagenes, puntuacion, calificaciones, estrellas, parrafo, link } = propiedades[id - 1];
 
 
@@ -48,7 +47,7 @@ const Property = () => {
         <div className="w-10/12 m-auto md:flex md:justify-between md:items-center font-bold  ">
           <div className="flex  md:items-center">
             <Link to="/properties" className="hidden md:inline">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-left" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#083344" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-circle-arrow-left" width="48" height="48" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#083344" fill="none" strokeLinecap="round" strokeLinejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M12 21a9 9 0 1 0 0 -18a9 9 0 0 0 0 18" />
                 <path d="M8 12l4 4" />
@@ -63,11 +62,11 @@ const Property = () => {
       </section >
       <section className="pb-5">
         <div className="w-10/12 m-auto lg:grid lg:gap-5 lg:grid-cols-3">
-          <div className="h-64 md:h-72 lg:col-span-2 md:mb-5">
+          <div className="h-80 md:h-72 -mt-10 md:mt-0 lg:col-span-2 md:mb-5">
             <Carousel slideInterval={5000}>
               {
-                imagenes.map(imagen => (
-                  <img className="" src={`/properties/property_${id}/${imagen}.webp`} alt="..." />
+                imagenes.map((imagen, index) => (
+                  <img className="" src={`/properties/property_${id}/${imagen}.webp`} alt="..." key={index} />
                 ))
               }
             </Carousel>
