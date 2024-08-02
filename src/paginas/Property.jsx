@@ -31,7 +31,7 @@ const Property = () => {
       obtenerPropiedad();
     }, []);
   */
-  const { titulo, ciudad, descripcion, mapa, imagenes, puntuacion, calificaciones, estrellas, parrafo, link } = propiedades[id - 1];
+  const { titulo, ciudad, descripcion, mapa, imagenes, puntuacion, calificaciones, estrellas, parrafo, link, invitados, entretenimiento, areaFamiliar } = propiedades[id - 1];
 
 
   return (
@@ -62,7 +62,7 @@ const Property = () => {
       </section >
       <section className="pb-5">
         <div className="w-10/12 m-auto lg:grid lg:gap-5 lg:grid-cols-3">
-          <div className="h-80 md:h-72 -mt-10 md:mt-0 lg:col-span-2 md:mb-5">
+          <div className="h-80 md:h-96 -mt-10 md:mt-0 lg:col-span-2 md:mb-5">
             <Carousel slideInterval={5000}>
               {
                 imagenes.map((imagen, index) => (
@@ -72,31 +72,40 @@ const Property = () => {
             </Carousel>
           </div>
           <div>
-            <div className="">
-              <Rating className="mb-2">
-                <Rating.Star />
-                <Rating.Star />
-                <Rating.Star />
-                <Rating.Star />
-                <Rating.Star />
-                <p className="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">{`${puntuacion} out of 5`} </p>
-              </Rating>
-              <p className="mb-4 text-sm font-medium text-gray-500 dark:text-gray-400">{`${calificaciones} global ratings `} <Link className="underline" to={link} target="_blank" >on Airbnb</Link> </p>
-              <Rating.Advanced percentFilled={estrellas[0]} className="mb-2">
-                5 star
-              </Rating.Advanced>
-              <Rating.Advanced percentFilled={estrellas[1]} className="mb-2">
-                4 star
-              </Rating.Advanced>
-              <Rating.Advanced percentFilled={estrellas[2]} className="mb-2">
-                3 star
-              </Rating.Advanced>
-              <Rating.Advanced percentFilled={estrellas[3]} className="mb-2">
-                2 star
-              </Rating.Advanced>
-              <Rating.Advanced percentFilled={estrellas[4]}>1 star</Rating.Advanced>
+            <div className="m-auto text-center lg:text-left">
+              <div>
+                <Rating className="mb-2 w-48 lg:w-auto mx-auto " size="lg">
+                  <Rating.Star />
+                  <Rating.Star />
+                  <Rating.Star />
+                  <Rating.Star />
+                  <Rating.Star />
+                </Rating>
+              </div>
+
+              <p className="text-3xl md:text-4xl font-bold text-gray-800 ">{`${puntuacion} out of 5`} </p>
+              <p className="mb-4 text-sm font-medium text-gray-500">{`${calificaciones} global ratings `} <Link className="underline" to={link} target="_blank" >on Airbnb</Link> </p>
+
+              <div className="hidden lg:block">
+                <Rating.Advanced percentFilled={estrellas[0]} className="mb-2">
+                  5 star
+                </Rating.Advanced>
+                <Rating.Advanced percentFilled={estrellas[1]} className="mb-2">
+                  4 star
+                </Rating.Advanced>
+                <Rating.Advanced percentFilled={estrellas[2]} className="mb-2">
+                  3 star
+                </Rating.Advanced>
+                <Rating.Advanced percentFilled={estrellas[3]} className="mb-2">
+                  2 star
+                </Rating.Advanced>
+                <Rating.Advanced percentFilled={estrellas[4]}>1 star</Rating.Advanced>
+
+              </div>
+
             </div>
-            <p className="text-gray-700 mt-5 font-bold  text-2xl ">Entire accommodation: <br /><span className="font-normal text-sm">{parrafo}</span></p>
+            <p className="text-gray-700 mt-5 font-bold text-center text-2xl lg:text-left">Entire accommodation: <br /><span className="font-normal text-sm">{parrafo}</span></p>
+
           </div>
         </div>
       </section>
@@ -121,9 +130,9 @@ const Property = () => {
                 <Accordion.Content>
                   <ul className="list-disc pl-5 mb-2 text-gray-600  text-sm">
                     <li className="pb-2"> <span className="font-bold">Laundry:</span> The laundry area is equipped with a free washer and dryer in the unit. Essentials such as towels, bed sheets, soap, and toilet paper are provided for your convenience. Additionally, you’ll find hangers, an iron, and a closet for clothing storage</li>
-                    <li className="pb-2"><span className="font-bold">Entertainment:</span> For your entertainment, the property offers a TV, exercise equipment, and a selection of books and reading material, ensuring there’s something for everyone to enjoy during their stay.
+                    <li className="pb-2"><span className="font-bold">Entertainment:</span> {entretenimiento}
                     </li>
-                    <li className="pb-2"><span className="font-bold">Heating and Cooling:</span> Families will appreciate the thoughtful amenities designed for children, including books and toys for ages 2-5, children’s tableware, and window guards for safety. There is also a kids’ playroom filled with toys, books, and games, providing a fun and safe environment for young guests.</li>
+                    <li className="pb-2"><span className="font-bold">Family area:</span>{areaFamiliar}</li>
                     <li className="pb-2"><span className="font-bold">Fully equipped kitchen:</span> The fully equipped kitchen is available for guest use and includes a refrigerator, microwave, and cooking basics such as pots and pans, oil, salt, and pepper. You’ll also find dishes and silverware (bowls, chopsticks, plates, cups, etc.), a freezer, dishwasher, gas stove, stainless steel oven, electric kettle, drip coffee maker, wine glasses, toaster, blender, dining table, and coffee. This kitchen setup ensures you have everything you need to prepare and enjoy meals during your stay.</li>
 
                   </ul>
@@ -134,8 +143,8 @@ const Property = () => {
                 <Accordion.Title>Check-in and Check-out information</Accordion.Title>
                 <Accordion.Content>
                   <ul className="mb-2  pl-5 list-disc text-gray-600 text-sm">
-                    <li className="pb-1">Check-in from 3:00 PM and Check-out before 11:00 AM </li> 
-                    <li className="pb-1">Maximum of 9 guests.</li>
+                    <li className="pb-1">Check-in from 3:00 PM and Check-out before 11:00 AM </li>
+                    <li className="pb-1">Maximum of {invitados} guests.</li>
                     <li className="pb-1">Before leaving, please take out the trash, turn off the appliances, and lock the doors.</li>
 
                   </ul>
@@ -176,7 +185,7 @@ const Property = () => {
           <img className="w-40 m-auto" src="/images/airbnbLogo_2.png" alt="logo-airbnb" />
         </div>
       </section>
-      <BannerBeyond/>
+      <BannerBeyond />
 
       <FooterGeneral />
     </>
