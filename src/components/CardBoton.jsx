@@ -1,7 +1,7 @@
 import { Card, Button } from "flowbite-react"
 import { Link } from "react-router-dom"
 
-const CardBoton = ({imagen, titulo, parrafo, boton, link}) => {
+const CardBoton = ({imagen, titulo, parrafo, boton, ubicacion, link}) => {
     return (
         <>
             <Card
@@ -9,8 +9,12 @@ const CardBoton = ({imagen, titulo, parrafo, boton, link}) => {
                 imgAlt="Meaningful alt text for an image that is not purely decorative"
                 imgSrc={imagen}
             >
-                <p className="font-bold text-gray-700 dark:text-gray-400">
+                
+                <p className="font-bold text-2xl text-gray-700 dark:text-gray-400">
                     {titulo}
+                </p>
+                <p className="font-bold text-gray-700 dark:text-gray-400">
+                    {ubicacion}
                 </p>
                 <p className="font-normal text-sm text-gray-500 dark:text-gray-400">
                     {parrafo}

@@ -42,6 +42,7 @@ const Properties = () => {
             key={propiedad.id}
             imagen={`/properties/property_${propiedad.id}/principal.webp`}
             titulo={propiedad.titulo}
+            ubicacion={propiedad.ciudad}
             parrafo={propiedad.descripcion}
             boton="MORE INFORMATION"
             link={`/properties/property/${propiedad.id}`}

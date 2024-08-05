@@ -18,7 +18,7 @@ const propiedades = [
     },
     {
         id: 2,
-        titulo: "Luxury house next to freeway 5",
+        titulo: "Luxury House Next to Freeway 5",
         ciudad: "Corning, California ",
         parrafo: "11 Guests | 4 Bedrooms | 6 Beds | 2 Bathrooms ",
         descripcion: " The house is new, has a large new kitchen, stove/oven, dishwasher and much more. Located just 4 minutes from downtown Corning, close to Starbucks, Safe Way, Taco Bell and a variety of restaurants, just 9 minutes from Rolling Hills Casino. It has enough parking for trailers.",
