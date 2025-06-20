@@ -1,8 +1,40 @@
-# React + Vite
+# MedinaMarketingBusiness (REACT + Flowbite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+(https://medinamarketingbusiness.com/)
+## Descripción del Proyecto
+Este repositorio aloja el código fuente del **frontend** para la página web de **MedinaMarketingBusiness**, una empresa privada de alojamientos al estilo Airbnb ubicada en Estados Unidos.  
+La aplicación presenta propiedades de forma **estática**, diseñadas para mostrar de manera clara y elegante tanto la información de los alojamientos como los datos institucionales de la empresa.
 
-Currently, two official plugins are available:
+Nuestro objetivo es ofrecer una plataforma visualmente atractiva e intuitiva, construida con tecnologías modernas como **React** y **Flowbite**, asegurando una experiencia de usuario fluida y profesional.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+##  Objetivos
+- **Mostrar información de propiedades:** Presentar los detalles estáticos de alojamientos disponibles a través de un diseño organizado.
+- **Dar a conocer la empresa:** Compartir información esencial sobre la visión, misión y servicios de MichelCapital.
+- **Optimizar la experiencia del usuario:** Implementar una interfaz clara, responsiva y estéticamente cuidada.
+
+---
+
+##  Tecnologías Utilizadas
+- **Frontend:**
+  - [React](https://reactjs.org/) – Librería para construir interfaces de usuario.
+  - [Flowbite](https://flowbite.com/) – Conjunto de componentes UI basado en Tailwind CSS.
+  - [Tailwind CSS](https://tailwindcss.com/) – Framework de estilos para diseño modular y escalable.
+
+---
+
+## Características del Proyecto
+- Propiedades alojadas de forma estática (sin backend ni base de datos).
+- Navegación responsiva y optimizada para dispositivos móviles.
+- Componentes reutilizables con buenas prácticas de desarrollo.
+
+---
+
+## Autores
+- **Maria Alejandra Barros**
+
+---
+
+##  Licencia
+Este proyecto es de carácter **privado** y no está destinado a distribución comercial ni académica sin autorización expresa.
